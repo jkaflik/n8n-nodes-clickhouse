@@ -1,19 +1,18 @@
 {
-  "name": "n8n-nodes-<...>",
-  "version": "0.1.0",
-  "description": "",
+  "name": "n8n-nodes-clickhouse",
+  "version": "0.0.1",
+  "description": "Query and ingest into your ClickHouse instance",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Jakub Kaflik",
+    "email": "jakub@kaflik.pl"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/jkaflik/n8n-nodes-clickhouse.git"
   },
   "main": "index.js",
   "scripts": {
@@ -30,12 +29,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/ClickHouse.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/ClickHouse/ClickHouse.node.js"
     ]
   },
   "devDependencies": {
@@ -48,5 +45,8 @@
     "n8n-workflow": "*",
     "prettier": "^2.7.1",
     "typescript": "~4.8.4"
+  },
+  "dependencies": {
+    "@clickhouse/client": "^0.0.13"
   }
 }
