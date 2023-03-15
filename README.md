@@ -1,3 +1,5 @@
+![Banner image](docs/banner.png)
+
 # n8n-nodes-clickhouse
 
 This is an n8n community node. It lets you use [ClickHouse](https://clickhouse.com/) in your n8n workflows.
@@ -8,11 +10,9 @@ ClickHouse is a fast open-source column-oriented database management system that
 
 [Installation](#installation)  
 [Operations](#operations)  
-[Credentials](#credentials)  <!-- delete if no auth needed -->  
+[Credentials](#credentials)
 [Compatibility](#compatibility)  
-[Usage](#usage)  <!-- delete if not using this section -->  
 [Resources](#resources)  
-[Version history](#version-history)  <!-- delete if not using this section -->
 
 ## Installation
 
